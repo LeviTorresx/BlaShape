@@ -1,0 +1,23 @@
+.btn {
+  background-color: var(--color-primary);
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 10px var(--color-primary);
+}
+
+.btn:hover {
+  background-color: var(--color-secondary);
+  transform: scale(1.05) translateY(5px);
+}
+
+.text {
+  color: var(--light);
+  font-size: 16px;
+  font-weight: bold;
+}

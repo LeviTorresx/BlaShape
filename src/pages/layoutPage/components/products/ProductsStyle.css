@@ -1,0 +1,132 @@
+.tittle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: var(--color-background-secondary);
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.material-container {
+  display: flex;
+  gap: 20px;
+  height: 85vh;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.list-container {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background-secondary);
+  gap: 20px;
+  padding: 10px;
+  width: auto;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.section-color {
+  animation: transition 0.7s ease-in-out forwards;
+}
+
+.radio-label {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.7s ease-in-out, all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  animation: transition 0.7s ease-in-out forwards;
+}
+
+.radio-label:hover {
+  background-color: var(--color-secondary);
+  transform: scale(1.05);
+}
+
+.radio-label input {
+  display: none;
+}
+
+.radio-label.selected {
+  background-color: var(--color-primary);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 0 var(--color-primary);
+}
+
+/*productos*/
+
+@keyframes transition {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.products-container {
+  padding: 20px;
+  margin: 0 10px;
+  width: 100%;
+  max-height: 74vh;
+  overflow: auto;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: var(--color-background-secondary);
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  animation: transition 0.7s ease-in-out forwards;
+}
+
+.product-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10px; /* Tamaño mínimo para que se vean bien */
+  min-height: 10px;
+}
+
+.product-info {
+  font-size: 14px;
+}
+
+.product-organizer {
+  padding: 20px;
+}
+
+/* Contenedor del material donde se organizan los productos */
+.material-container .material-box {
+  position: relative;
+  background-color: white;
+  max-width: auto;
+  max-height: auto;
+  margin: 20px auto;
+  border: 2px dashed #bbb;
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 0px;
+  animation: transition 0.7s ease-in-out both;
+}
