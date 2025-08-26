@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
 
 :root {
-  --color-background-primary: rgba(27, 16, 51, 1); /* Morado azulado */
+  --color-background-primary: rgba(27, 16, 51, 1); /* Morado fondo */
   --color-background-secondary: rgba(50, 20, 80, 1); /* Morado medio */
 
   --color-primary: rgba(255, 95, 0, 1); /* Naranja intenso */
